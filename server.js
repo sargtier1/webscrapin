@@ -11,7 +11,7 @@ const router = express.Router();
 
 require('./config/routes')(router);
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 

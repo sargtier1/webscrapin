@@ -4,16 +4,16 @@ const Schema = mongoose.Schema;
 
 const ArticleSchema = new Schema ({
     title: {
-        type: string,
+        type: String,
         required: true,
         unique: true
     },
     description: {
-        type: string,
+        type: String,
         require: true
     },
     link: {
-        type: string,
+        type: String,
         require: true
     },
     date: {
@@ -21,7 +21,7 @@ const ArticleSchema = new Schema ({
         default: Date.now
     },
     saved: {
-        type: boolean,
+        type: Boolean,
         default: false
     }
 });

@@ -1,13 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="offset-2 col-8">
+            {{#each saved}}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="{{this.commentsk}}" class="btn btn-warning-outline article-link" target="_blank">Full Article</a>
+                    <button class="btn btn-success comment">comment</button>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-<script src="../../public/assets/js/index.js"></script>
-<script src="../../public/assets/js/saved.js"></script>
+<script src="../public/assets/js/index.js"></script>
+{{!-- <script src="../../public/assets/js/saved.js"></script> --}}
